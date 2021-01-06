@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "Problem1.h"
+#include "Problem2.h"
 
 /**
 * Leetcode75
@@ -12,7 +13,6 @@
 * ✔ Properly document the process used to solve the problem.
 */
 
-void Run(Solution* soln);
 int main(int argc, char* argv) {
 
 	int problem_number;
@@ -25,7 +25,13 @@ int main(int argc, char* argv) {
 		case 1:
 		{
 			Problem1 problem_1;
-			Run(&problem_1);
+			problem_1.runSolution();
+			break;
+		}
+		case 2:
+		{
+			Problem2 problem_2;
+			problem_2.runSolution();
 			break;
 		}
 		default:
@@ -33,8 +39,4 @@ int main(int argc, char* argv) {
 	}
 
 	return EXIT_SUCCESS;
-}
-
-void Run(Solution* soln) {
-	soln->runSolution();
 }

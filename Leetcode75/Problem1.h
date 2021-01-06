@@ -6,9 +6,7 @@
 #include <unordered_map>
 #include <cassert>
 
-#include "Solution.h"
-
-class Problem1 : public Solution {
+class Problem1 {
 
 public:
 
@@ -70,9 +68,8 @@ public:
 		assert(nums[answer[0]] + nums[answer[1]] ==  target);
 	}
 
-	int runSolution() override {
+	void runSolution() {
 		this->runTwoSum();
-		return IMPLEMENTED;
 	}
 
 };
