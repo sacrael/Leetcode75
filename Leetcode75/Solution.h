@@ -4,10 +4,9 @@
 #define IMPLEMENTED 0x10
 #define NOT_IMPLEMENTED 0x09
 
-class Soluton {
+class Solution {
 public:
-	int mySolution() { return NOT_IMPLEMENTED; }
-	int optimalSolution() { return NOT_IMPLEMENTED; }
+	virtual int runSolution() { return NOT_IMPLEMENTED; }
 };
 
 #endif

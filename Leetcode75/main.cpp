@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <iostream>
 
+#include "Problem1.h"
+
 /**
 * Leetcode75
 * 
@@ -10,13 +12,29 @@
 * ✔ Properly document the process used to solve the problem.
 */
 
+void Run(Solution* soln);
 int main(int argc, char* argv) {
 
 	int problem_number;
 	printf("Welcome to Leetcode75\nEnter the problem number to run: ");
 	std::cin >> problem_number;
 
-	printf("Problem: %d\n", problem_number);
+	printf("Problem: #%d\n", problem_number);
+
+	switch (problem_number) {
+		case 1:
+		{
+			Problem1 problem_1;
+			Run(&problem_1);
+			break;
+		}
+		default:
+			printf("Solution for problem %d not implemented.", problem_number);
+	}
 
 	return EXIT_SUCCESS;
+}
+
+void Run(Solution* soln) {
+	soln->runSolution();
 }
