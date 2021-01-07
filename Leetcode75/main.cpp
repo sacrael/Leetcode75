@@ -8,6 +8,7 @@
 #include "Problem4.h"
 #include "Problem5.h"
 #include "Problem6.h"
+#include "Problem7.h"
 
 /**
 * Leetcode75
@@ -61,6 +62,11 @@ int main(int argc, char* argv) {
 			Problem6 problem_6;
 			problem_6.runSolution();
 			break;
+		}
+		case 7:
+		{
+			Problem7 problem_7;
+			problem_7.runSolution();
 		}
 		default:
 			printf("Solution for problem %d not implemented.", problem_number);
