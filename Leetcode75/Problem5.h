@@ -22,7 +22,7 @@ public:
 	}
 
 	void runMaximumSubarray() {
-		std::cout << "Maximum Subarray\n";
+		std::cout << "Maximum Sum Subarray\n";
 		std::cout << "What is the size of the array? ";
 		int size_;
 		std::cin >> size_;

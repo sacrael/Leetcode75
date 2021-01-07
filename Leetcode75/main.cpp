@@ -7,6 +7,7 @@
 #include "Problem3.h"
 #include "Problem4.h"
 #include "Problem5.h"
+#include "Problem6.h"
 
 /**
 * Leetcode75
@@ -53,6 +54,12 @@ int main(int argc, char* argv) {
 		{
 			Problem5 problem_5;
 			problem_5.runSolution();
+			break;
+		}
+		case 6:
+		{
+			Problem6 problem_6;
+			problem_6.runSolution();
 			break;
 		}
 		default:
