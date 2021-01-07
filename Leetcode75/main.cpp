@@ -4,6 +4,7 @@
 
 #include "Problem1.h"
 #include "Problem2.h"
+#include "Problem3.h"
 
 /**
 * Leetcode75
@@ -34,9 +35,25 @@ int main(int argc, char* argv) {
 			problem_2.runSolution();
 			break;
 		}
+		case 3:
+		{
+			Problem3 problem_3;
+			problem_3.runSolution();
+			break;
+		}
 		default:
 			printf("Solution for problem %d not implemented.", problem_number);
 	}
 
 	return EXIT_SUCCESS;
+}
+
+void printArr(std::vector<int>& vec) {
+	std::cout << "[ ";
+	for (int i = 0; i < vec.size(); ++i) {
+		std::cout << vec[i];
+		if (i < vec.size() - 1) std::cout << ", ";
+		else std::cout << " ";
+	}
+	std::cout << "]\n";
 }
