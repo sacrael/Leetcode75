@@ -38,5 +38,14 @@
     <ClInclude Include="Problem5.h">
       <Filter>Source Files\Solutions</Filter>
     </ClInclude>
+    <ClInclude Include="Problem6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem8.h">
+      <Filter>Source Files\Solutions</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
